@@ -23,8 +23,9 @@ GameObject:
   - component: {fileID: 23185773751371726}
   - component: {fileID: 136513755058485270}
   - component: {fileID: 54968850152026800}
+  - component: {fileID: 114748085445951646}
   m_Layer: 0
-  m_Name: New Prefab
+  m_Name: Coin
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,11 +96,22 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114748085445951646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1448799099093834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9904a5561b04448318b742014ddf92cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136513755058485270
 CapsuleCollider:
   m_ObjectHideFlags: 1

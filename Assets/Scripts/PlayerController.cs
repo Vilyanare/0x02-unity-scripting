@@ -5,12 +5,16 @@ public class PlayerController : MonoBehaviour {
 
 	public float speed = 2000f;
 
-	public Rigidbody rb;
+	private Rigidbody rb;
 	private int score = 0;
 	public int health = 5;
 
+	void Start () {
+		rb = gameObject.GetComponent<Rigidbody>();
+	}
+
 	void OnTriggerEnter (Collider other) {
-		if (other.tag == "Coin") {
+		if (other.tag == "Pickup") {
 			score++;
 			Destroy(other.gameObject);
 			Debug.Log(string.Format("Score: {0}", score));
